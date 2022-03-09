@@ -185,6 +185,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
+  return Math.ceil(num);
 
 }
 
@@ -200,27 +201,29 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero==0) {
+  if(numero == 0) {
     return false;
-  } if (nummero>0){
-    return 'es positivo';
-  }else{
-    return 'es negativo';
+  }else if(numero > 0) {
+    return "Es positivo";
+  }else {
+    return "Es negativo";
   }
-
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var simbolo = str + "!";
+  return simbolo;
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-
+  let combinados = nombre + ',' + apellido;
+  return combinados;
 
 }
 
@@ -228,7 +231,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var cadena = "hola" + nombre;
+  let cadena = nombre + 'hola' + nombre;
   return cadena;
 
 }
