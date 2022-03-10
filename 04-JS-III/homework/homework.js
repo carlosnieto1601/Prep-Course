@@ -3,6 +3,10 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  for (let index = 0; index < array.length; index++) {
+    const element = array[0];
+    return element;
+  }
 }
 
 
@@ -23,6 +27,10 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+  }
 }
 
 
