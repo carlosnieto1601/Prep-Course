@@ -28,6 +28,9 @@ function posicionabc(letra) {
     return "no esta la letra";
 }
 
+var array =["hello", "Work"];
+
+console.log(array.join(" "));
 
 console.log(posicionabc("a"));
 console.log(posicionabc("h"));
